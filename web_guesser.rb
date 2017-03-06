@@ -11,14 +11,14 @@ get '/' do
 end
 
 def check_guess(guess)
-  if guess - SECRET_NUMBER > 5
-    "Your guess #{guess} is WAY TOO HIGH!"
+if guess - SECRET_NUMBER > 5
+    "Really?! WAY TOO HIGH!"
   elsif SECRET_NUMBER - guess > 5
-    "Your guess #{guess} is WAY TOO LOW!"
+    "Are you even trying? is WAY TOO LOW!"
   elsif guess > SECRET_NUMBER
-    "Your guess is TOO HIGH."
+    "You must live in Colorado...TOO HIGH."
   elsif guess < SECRET_NUMBER
-    "Your guess is TOO LOW."
+    "And...TOO LOW."
   else
     "You have chosen wisely...that is the correct cup with the number #{SECRET_NUMBER} on it."
   end
